@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Futura";
+    src: url("./src/Components/assests/Spartan.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+}
+@font-face {
+    font-family: "Futura";
+    src: url("./src/Components/assests/SansSerifFLF.otf");
+}

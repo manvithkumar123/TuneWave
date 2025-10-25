@@ -1,0 +1,392 @@
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+.search-bar{
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  height: 40px;
+  margin-top: 30px;
+  outline: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar svg{
+  display: none;
+}
+.search-bar-section{
+  width: 150px !important;
+  justify-content: flex-end;
+}
+.input {
+  border-style: none;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+  background-color: #7e4fd4;
+  box-shadow: 0px 0px 3px #f3f3f3;
+  color: #fff;
+}
+
+
+.input::placeholder,
+.input {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+}
+
+.input::placeholder {
+  color: #8f8f8f;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border-style: none;
+  border-radius: 50%;
+  pointer-events: painted;
+  background-color: transparent;
+  transition: .2s linear;
+}
+#popular-text{
+  margin-top: 10px;
+  margin-right: auto;
+  font-family: sans-serif;
+}
+
+.icon:focus ~ .input,
+.input:focus {
+  box-shadow: none;
+  width: 250px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 3px solid #7e4fd4;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.search-icon{
+    font-size: 20px;
+    color: #7e4fd4;
+}
+.navigation-container{
+    width: 100vw;
+    height: max-content;
+    color: white;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.navigation-container h4:hover{
+    cursor: pointer;
+    opacity: 40%;
+}
+.promote-sec-1{
+    width: 100vw;
+    height: 500px;
+    background-color: #7e4fd4;
+}
+.filters-homepage-page{
+    display: flex;
+    width: 100vw;
+    height: max-content;
+}
+.filter-section{
+    width: 15%;
+    min-width: 200px;
+    height: 100%;
+    padding-top: 50px;
+    color: white;
+    min-height: 100vh;
+    font-family: Futura;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.heading-filter{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 5px;
+}
+.greenbox{
+    height: 10px;
+    width: 10px;
+    background-color: #00FF00;
+}
+.filter-section h4{
+    font-size: 18px;
+}
+.filter-option{
+    margin-left: 20px;
+    margin-top: 2px;
+}
+.filter-option label{
+    font-size: 13px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.explore-homepage{
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.promotion-song-container{
+    width: 90%;
+    height: 500px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.promotion-song-container img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.promotion-song-container:hover #play-button{
+    display: flex;
+    cursor: pointer;
+}
+.Songs-flex-container{
+    height: max-content;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+}
+.songs_container{
+    width: 100%;
+    height: max-content;
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+.popular-artist-card{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.popular-artists{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: red;
+}
+.popular-artists img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.all-songs-list{
+    margin-top: 20px;
+}
+.all-songs-list-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+.popular-artist-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+.favourite-button{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.heart-container {
+    --heart-color: rgb(255, 91, 137);
+    position: relative;
+    width: 20px;
+    height: 20px;
+    transition: .3s;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+  }
+  
+  .heart-container .checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  .heart-container .svg-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heart-container .svg-outline,
+          .heart-container .svg-filled {
+    fill: var(--heart-color);
+    position: absolute;
+  }
+  
+  .heart-container .svg-filled {
+    animation: keyframes-svg-filled 1s;
+    display: none;
+  }
+  
+  .heart-container .svg-celebrate {
+    position: absolute;
+    animation: keyframes-svg-celebrate .5s;
+    animation-fill-mode: forwards;
+    display: none;
+    stroke: var(--heart-color);
+    fill: var(--heart-color);
+    stroke-width: 2px;
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-filled {
+    display: block
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-celebrate {
+    display: block
+  }
+  
+  @keyframes keyframes-svg-filled {
+    0% {
+      transform: scale(0);
+    }
+  
+    25% {
+      transform: scale(1.2);
+    }
+  
+    50% {
+      transform: scale(1);
+      filter: brightness(1.5);
+    }
+  }
+  
+  @keyframes keyframes-svg-celebrate {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      filter: brightness(1.5);
+    }
+  
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+      display: none;
+    }
+  } 
+  
+.Footer-explore{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: max-content;
+}
+.main-music-card {
+    transition: all 0.3s ease;
+}
+.hidden {
+    display: none;
+}
+#toogle-button{
+    background-color: #20d661;
+    color: black;
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: auto;
+}
+.explore-homepage{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:700px) {
+    .filter-section{
+        display: none;
+    }
+    .popular-artist-card{
+        width: 100px;
+        height: 100px;
+    }
+    .popular-artists{
+        height: 100px;
+        width: 100px;
+    }
+    .popular-artist-container{
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .popular-artist-card h3{
+        font-size: 14px !important;
+    }
+    .songs_container h2{
+        text-align: center;
+    }
+    .Songs-flex-container{
+        justify-content: center;
+    }
+    .Footer-explore{
+        position: fixed;
+        bottom: 0;
+        width: 250px;
+        right: 30px;
+    }
+    #toogle-button{
+        height: 40px;
+        width: 40px;
+        right: 0;
+    }
+    .all-songs-list-flex{
+      justify-content: center;
+    }
+    .heart-container{
+      bottom: 17px;
+    }
+}

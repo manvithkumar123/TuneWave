@@ -1,0 +1,189 @@
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px 30px 20px 20px;
+    border-bottom: 1px solid white;
+}
+#logo-tunewave{
+    color: white;
+}
+#tunewave-logo{
+    height: 30px;
+    width: 50px;
+}
+#Menu-button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    width: 130px;
+    border-radius: 999px;
+    border: none;
+    height: 50px;
+}
+#Upload-button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    width: 130px;
+    border-radius: 999px;
+    border: none;
+    height: 50px;
+}
+.menu_upload-container{
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    gap: 10px;
+}
+.upload-section{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.file-upload-form {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .file-upload-label input {
+    display: none;
+  }
+  .file-upload-label svg {
+    height: 50px;
+    fill: rgb(82, 82, 82);
+    margin-bottom: 20px;
+  }
+  .file-upload-label {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 30px 70px;
+    border-radius: 40px;
+    border: 2px dashed rgb(82, 82, 82);
+    box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+  }
+  .file-upload-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .browse-button {
+    background-color: rgb(82, 82, 82);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s;
+  }
+  .browse-button:hover {
+    background-color: rgb(14, 14, 14);
+  }
+.upload-form-section  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.upload-form-section{
+    background-color: white;
+    height: max-content;
+    width: max-content;
+    max-width: 90%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+.upload-components-coloum #label-flex{
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-around;
+}
+.upload-components-coloum h3{
+    margin-top: 5px;
+}
+.upload-container-flex{
+    display: flex;
+    gap: 5px;
+}
+.upload-components-coloum input{
+    height: 30px;
+    padding-left:5px ;
+}
+.upload-components-coloum select{
+    height: 40px;
+}
+.file-upload-form{
+    width: 300px;
+    font-size: 12px;
+}
+.browse-button{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+#Upload-btn{
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 0.2px solid black;
+    background-color: black;
+    color: white;
+}
+#close-btn{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+@media screen and (max-width:700px){
+    #Menu-button{
+        width: 100px;
+        font-size: 12px;
+    }
+    #Upload-button{
+        width: 100px;
+    }
+    .menu_upload-container{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:400px) {
+    #Menu-button{
+        width: 70px;
+        height: 40px;
+    }
+    #Upload-button{
+        width: 70px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
