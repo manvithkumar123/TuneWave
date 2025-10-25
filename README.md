@@ -1,5 +1,5 @@
-TuneWave Info
- **Built by Manvith Kumar as an internship project in Unified Mentor Mini Project**
+# TuneWave Info
+### **Built by Manvith Kumar as an internship project in Unified Mentor Mini Project**
 
 **Description:**  
 TuneWave is a music website which stores music and allows playing without advertisements
